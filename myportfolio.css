@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: 300ms;
+    overflow-x: hidden;
 }
 
 body{
@@ -25,6 +26,7 @@ body{
     font-size: 20px;
     width: 100%;
     z-index: 2;
+    width: fit-content;
 }
 
 .nav-list{
@@ -78,6 +80,42 @@ body{
     margin: 0 auto;  
 }
 
+.container h1 {
+    font-size: 38px;
+    color: #fff;
+    animation-name: smooth;
+    animation-duration: 3s;
+    transition: opacity ease-in;
+    font-weight: bold;
+}
+
+.container p {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 5s steps(39, end);
+    width: 15px;
+    width: 39ch;
+}
+
+.container a {
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    animation-name: opac;
+    animation-duration: 10s;
+    transition: all ease-in-out;
+}
+
+.container a:hover{
+    color: #999;
+}
+
+
 @keyframes smooth {
     0% {
         opacity: 0;
@@ -105,41 +143,6 @@ body{
     50%{width: 0;}
     100%{ width: 100; }
   }
-
-.container h1 {
-    font-size: 38px;
-    color: #fff;
-    animation-name: smooth;
-    animation-duration: 3s;
-    transition: opacity ease-in;
-    font-weight: bold;
-}
-
-.container p {
-    font-size: 18px;
-    color: #fff;
-    margin-top: 15px;
-    white-space: nowrap;
-	overflow: hidden;
-      animation: type 5s steps(39, end);
-     width: 15px;
-    width: 39ch;
-}
-
-.container a {
-    margin-top: 10px;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px;
-    display: inline-block;
-    animation-name: opac;
-    animation-duration: 10s;
-    transition: all ease-in-out;
-}
-
-.container a:hover{
-    color: #999;
-}
 
 /* PEOJECT SECTION */
 
@@ -268,7 +271,7 @@ body{
 @media (max-width: 850px){
     #navbar{
     justify-content: center;
-    font-size: 16px;
+    font-size: 14px;
     }
 	
     .project-tile {

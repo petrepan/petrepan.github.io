@@ -4,7 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: 300ms;
-    overflow-x: hidden;
+    overflow-x: none;
 }
 
 body{
@@ -26,7 +26,6 @@ body{
     font-size: 20px;
     width: 100%;
     z-index: 2;
-    width: fit-content;
 }
 
 .nav-list{

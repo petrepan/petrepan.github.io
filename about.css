@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 300ms;
+}
+
+body{
+    font-family: poppins, sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* NAVIGATION BAR */
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #eee;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: #333; 
+    transition: all .3s; 
+}
+
+.active {
+    border-bottom: 2px solid #333; 
+}
+
+
+.nav-list a:hover {
+    border-bottom: 2px solid #333;   
+}
+
+/* ABOUT */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  5px;
+    min-height: 90vh;
+    width: 80%;
+    margin: 10px auto;  
+}
+
+
+
+
+.container h1 {
+    font-size: 48px;
+}
+
+.container p {
+    font-size: 20px; 
+    margin-top: 15px;
+    animation-name: smooth;
+    animation-duration: 3s;
+    transition: opacity ease-in;
+}
+
+.container a {
+    margin-top: 10px;
+    
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    animation-name: opac;
+    animation-duration: 10s;
+    transition: all ease-in-out;
+}
+
+.container a:hover{
+    color: #999;
+}
+
+
+/* CONTACT SECTION */
+
+#contact {
+    text-align: center;
+    padding: 30px;
+    background-color: #eee;
+}
+
+#contact h2 {
+    font-size: 35px;
+}
+
+.contact-links {
+    padding: 20px;
+    margin-top: 15px;
+    color: #333;  
+}
+
+.contact-links a {
+    text-decoration: none;
+    padding: 15px;
+    color: #333;
+    transition-property: all;
+}
+
+.contact-links a:hover{
+    color: #999;
+}
+
+@media (max-width: 500px){
+    #navbar{
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .container{
+        padding: 40px 10px;
+        margin: 30px auto;
+    }
+
+    .container h1 {
+        font-weight: bold;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    #contact h2 {
+        font-size: 28px;
+    }
+}
+
+

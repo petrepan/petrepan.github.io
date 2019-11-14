@@ -38,7 +38,7 @@ body{
     padding: 10px;
     margin: 10px;
     color: #333; 
-    transition: all .3s; 
+    transition: all; 
 }
 
 .active {
@@ -46,7 +46,7 @@ body{
 }
 
 .nav-list a:hover {
-    border-bottom: 2px solid #333;   
+    color: #999;   
 }
 
 
@@ -146,7 +146,7 @@ body{
 /* PEOJECT SECTION */
 
 #projects {
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgb(0, 0, 0);
     padding: 40px;
     color: #fff;
     width: 100%;
@@ -294,6 +294,32 @@ body{
     
     .project-tile p {
         font-size: 16px;
+    }
+}
+
+@media (max-width:365px){
+    #navbar{
+        font-size: 12px;
+        justify-content: center;
+    }
+    
+    .container h1 {
+        font-size: 28px;
+        color: #fff;
+    }
+    
+    .container p {
+        font-size: 14px;
+        color: #fff;
+        margin-top: 15px;
+    }    
+
+    .project-tile h3 {
+        font-size: 20px;
+    }
+    
+    .project-tile p {
+        font-size: 15px;
     }
 }
 

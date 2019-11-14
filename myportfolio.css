@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: 300ms;
 }
 
 body{
@@ -17,34 +18,38 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 10vh;
     position: sticky;
     top: 0;
     background-color: #eee;
-    z-index: 999;
-    font-size: 24px;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    z-index: 2;
 }
 
 .nav-list{
     display: flex;
-    margin-right: 30px;
     list-style: none;
 }
 
 .nav-list a{
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     margin: 10px;
     color: #333; 
     transition: all .3s; 
-    font-size: 24px;
+}
+
+.active {
+    border-bottom: 2px solid #333; 
 }
 
 .nav-list a:hover {
     border-bottom: 2px solid #333;   
 }
 
-/* ABOUT SECTION */
+
+/* WELCOME SECTION */
 
 #welcome-section {
     background-image: url(https://res.cloudinary.com/petrepan/image/upload/q_17/v1573389374/meee_bvdeja.jpg);
@@ -96,29 +101,29 @@ body{
 }
 
 @keyframes type{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; }
-}
-
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; }
+  }
 
 .container h1 {
-    font-size: 48px;
+    font-size: 38px;
     color: #fff;
     animation-name: smooth;
     animation-duration: 3s;
     transition: opacity ease-in;
+    font-weight: bold;
 }
 
 .container p {
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
- white-space: nowrap;
+    margin-top: 15px;
+    white-space: nowrap;
 	overflow: hidden;
-      animation: type 5s steps(43, end);
-  width: 24px;
-  width: 43ch;
-  
+      animation: type 5s steps(39, end);
+     width: 15px;
+    width: 39ch;
 }
 
 .container a {
@@ -140,11 +145,10 @@ body{
 
 #projects {
     background-color: rgba(0, 0, 0, .9);
-    padding: ;
+    padding: 40px;
     color: #fff;
     width: 100%;
     text-align: center;
-   padding: 5rem 0;
 }
 
 #projects h2 {
@@ -152,6 +156,7 @@ body{
     font-size: 48px;
     text-transform: uppercase;
     padding: 30px;
+    margin-top: 30px;
     border-bottom: 2px solid #999;
 }
 
@@ -160,15 +165,16 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     width: 80%;
-    margin: 0 auto;
-    padding: 5rem ;
+    margin: 40px auto;
+    padding: 25px;
     text-align: left;
     border-bottom: 2px solid #999;
 }
 
 .project-tile h3 {
     text-transform: capitalize;
-    font-size: 28px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .project-tile p {
@@ -234,19 +240,18 @@ body{
 
 #contact {
     text-align: center;
-    padding: 5rem;
-    background-color: #ffe;
+    padding: 30px;
+    background-color: #eee;
 }
 
 #contact h2 {
-    font-size: 38px;
+    font-size: 35px;
 }
 
 .contact-links {
-    padding: 5rem;
+    padding: 20px;
     margin-top: 15px;
-    color: #333;
-    border-top: 2px solid #999;
+    color: #333;  
 }
 
 .contact-links a {
@@ -266,12 +271,12 @@ body{
     }
 
     .container h1 {
-        font-size: 48px;
+        font-size: 38px;
         color: #fff;
     }
     
     .container p {
-        font-size: 26px;
+        font-size: 16px;
         color: #fff;
         margin-top: 15px;
     }    
@@ -284,3 +289,4 @@ body{
         font-size: 16px;
     }
 }
+
